@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #111;
+    border-radius: 20px;
+    padding: 40px;
+    width: 90%;
+    max-width: 750px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+h1 span {
+    font-size: 2.5rem;
+    background: linear-gradient(90deg , #6a8dfd, #f39c7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #eaf1ff;
+    text-shadow: 0 0 8px #ffffff50;
+}
+
+p {
+    margin-top: 1px;
+    line-weight: 1.6;
+    color: #ccc
+}
+
+.demo-btn {
+    margin-top: 30px;
+    background: linear-gradient(90deg, #6a8dfd, #f39c7f);
+    border: none;
+    border-radius: 12px;
+    padding: 12px 40px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition:0.3s;
+}
+
+.demo-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #f39c7f80;
+}
+
+h3 {
+    margin-top: 40px;
+    font-size: 1.6rem;
+    text-shadow: 0 0 8px #ffffff50;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+input[type="text"] ,
+input[type="email"] ,
+input[type="url"] ,
+input[type="tel"] {
+    flex: 1;
+    padding: 12px 15px;
+    background: #1c1c1c;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid #f39c7f;
+    box-shadow: 0 0 8px #f39c7f80;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    xolor: #ccc;
+}
+
+.checkbox input {
+    margin-right: 8px;
+    tranform: scale(1.2);
+}
+
+.submit-btn {
+    width: 100%;
+    background: linear-gradient(90geg, #6a8dfd, #f39c7f);
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    transition: scale(1.03);
+    box-shadow: 0 0 20px #6a8dfd80;
+}
+
+@media (max-width:600px) {
+    .form-row {
+        flex-direction: column;
+    }
+}
